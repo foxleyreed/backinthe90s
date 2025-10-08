@@ -5,6 +5,22 @@
 
 I created this blog to explore Laravel's advanced features and build a platform where nostalgia meets modern technology. It's a complete content management system with differentiated user roles, dedicated dashboards, and a professional publishing workflow. 🌈✨
 
+---
+
+<p align="center">
+  <img src="screenshots/IMG_0395.PNG" width="320" height="400"/>
+  <img src="screenshots/IMG_0394.PNG" width="320" height="400"/>
+  <img src="screenshots/IMG_0396.PNG" width="320" height="400"/>
+</p>
+
+<p align="center">
+  <img src="screenshots/IMG_0397.PNG" width="320" height="600"/>
+  <img src="screenshots/IMG_0401.PNG" width="320" height="600"/>
+  <img src="screenshots/IMG_0399.PNG" width="320" height="600"/>
+</p>
+
+---
+
 ## 📝 Blog Features
 
 - **👥 Advanced User System**: User registration and authentication with three distinct roles: Admin, Revisor, and Writer, each with specific permissions and dashboards.

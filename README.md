@@ -1,61 +1,72 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🕺 Back in the 90s
+## 🎬 What is this project?
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+**Back in the 90s** is a modern blog dedicated to the '90s, built entirely with the **Laravel** framework. Inspired by the aesthetics and atmosphere of BoJack Horseman, this project captures the essence of a decade that defined a generation. A complete blog system with user management, articles, categorization, and a powerful content review system.
 
-## About Laravel
+I created this blog to explore Laravel's advanced features and build a platform where nostalgia meets modern technology. It's a complete content management system with differentiated user roles, dedicated dashboards, and a professional publishing workflow. 🌈✨
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 📝 Blog Features
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- **👥 Advanced User System**: User registration and authentication with three distinct roles: Admin, Revisor, and Writer, each with specific permissions and dashboards.
+- **📰 Article Management**: Creation, editing, and deletion of complete articles with title, subtitle, body text, and cover image.
+- **🏷️ Categorization System**: Complete management of categories and tags with many-to-many relationships for flexible content classification.
+- **🔍 Advanced Search**: Full-text search engine that allows searching articles by title, subtitle, and category.
+- **✅ Approval Workflow**: Fact-checking system with dedicated dashboard for reviewers to control content quality before publication.
+- **📊 Custom Dashboards**: Administrative interfaces specific to each user role with targeted functionalities.
+- **🎯 "Work with Us" System**: Application form to allow users to request access to the editorial team.
+- **📖 Advanced Article Details**: URLs with slugs, automatic reading time calculation, and optimized content display.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 🛠️ Tech Stack
 
-## Learning Laravel
+- 💻 **Framework**: Laravel 10.x
+- 🗃️ **Database**: MySQL with Eloquent ORM
+- 🎨 **Frontend**: Blade Templates + Bootstrap
+- 🔐 **Authentication**: Laravel Fortify
+- 📧 **Email**: Laravel Mail with SMTP driver
+- 🖼️ **Storage**: Laravel Filesystem for image management
+- 🔍 **Search**: Laravel Scout (optional)
+- 🧪 **Testing**: PHPUnit for automated testing
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## 🚀 How to Deploy
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### Prerequisites
+- PHP 8.1 or higher
+- Composer
+- MySQL 5.7+
+- Node.js and NPM (for asset compilation)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Local Installation
 
-## Laravel Sponsors
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/back-in-the-90s.git
+   cd back-in-the-90s
+   ```
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+2. **Install dependencies**
+   ```bash
+   composer install
+   npm install
+   ```
 
-### Premium Partners
+3. **Environment setup**
+   ```bash
+   cp .env.example .env
+   php artisan key:generate
+   ```
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+4. **Database configuration**
+   - Edit the `.env` file with your database credentials
+   ```bash
+   php artisan migrate --seed
+   ```
 
-## Contributing
+5. **Compile assets**
+   ```bash
+   npm run dev
+   ```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+6. **Start the server**
+   ```bash
+   php artisan serve
+   ```

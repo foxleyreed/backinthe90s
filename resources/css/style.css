@@ -1,0 +1,172 @@
+@font-face {
+    font-family: 'RobotoMono Bold';
+    src: url('/public/RobotoMono-Bold.ttf');
+}
+
+body {
+    font-family: 'RobotoMono Bold';
+    font-size: 21px;
+    background-color: #fcffed;
+    border: 3px solid black;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: rgb(244, 243, 246);
+}
+
+.navbar-nav {
+    display: flex !important;
+    width: 100%;
+}
+
+.navbar-nav .nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link:focus,
+.nav-link:active,
+.dropdown-toggle:focus,
+.dropdown-toggle:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.nav-minimize {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding: 8px 16px;
+}
+
+.nav-minimize-icon::before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 2.5px;
+    background-color: black;
+    vertical-align: middle;
+}
+
+.nav-close {
+    display: flex;
+    align-items: center;
+}
+
+.nav-close-icon {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.dropdown-menu {
+    border: 2px solid black;
+}
+
+.circle-pink {
+    background-color: #fc6cc4;
+    border: 2px solid black;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.circle-yellow {
+    background-color: #fff956;
+    border: 2px solid black;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* SEARCH BAR */
+.search-bar {
+    padding: 30px;
+    background-color: #fc6cc4;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+.search-bar-input {
+    margin-left: 25vw;
+    margin-right: 25vw;
+    padding: 12px;
+    border: 3px solid black;
+    font-size: 21px;
+}
+
+/* CARD */
+.card {
+    border: 3px solid black;
+}
+
+.card-img-top {
+    border-bottom: 3px solid black;
+}
+
+.card-btn,
+.card-btn:hover {
+    background-color: #fff956;
+    border: 2px solid black;
+    color: black;
+}
+
+.card-footer {
+    border-top: 3px solid black;
+    background-color: rgb(12, 161, 253);
+}
+
+.img-fluid {
+    border: 3px solid black;
+}
+
+/** FORM **/
+.form-control,
+.form-control:focus,
+.form-control:active {
+    border: 2px solid black;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/* FOOTER */
+footer {
+    border-top: 3px solid black;
+    background-color: rgb(244, 243, 246);
+}
+
+/* BUTTONS */
+.btn-submit,
+.btn-submit:hover {
+    background-color: #fff956;
+    border: 2px solid black;
+    color: black;
+}
+
+.btn-danger,
+.btn-danger:hover {
+    border: 2px solid black;
+    color: black;
+}
+
+.btn-show,
+.btn-show:hover {
+    background-color: rgb(12, 161, 253);
+    border: 2px solid black;
+    color: black;
+}
+
+.btn-link {
+    color: rgb(12, 161, 253);
+}

@@ -55,7 +55,7 @@ I created this blog to explore Laravel's advanced features and build a platform 
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/back-in-the-90s.git
+   git clone https://github.com/foxleyreed/back-in-the-90s.git
    cd back-in-the-90s
    ```
 
